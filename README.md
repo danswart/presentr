@@ -4,7 +4,20 @@
 <img src="inst/extdata/presentr-hexSticker-royalblue.png" width="25%" height="25%">
 <img src="inst/extdata/presentr-hexSticker-gold.png" width="25%" height="25%">
 
-The goal of presentr is to ...
+
+The functions of presentr are:
+
+presentr::imbed_mp3()
+presentr::find_duplicate_media()
+presentr::get_media_calls()
+presentr::lmt_gif_loops()
+presentr::slides_to_bookdown()
+presentr::transform_media_calls()
+presentr::utils_pipe()
+presentr::xtract_gifs_optional_save()
+presentr::extract_imgs_optional_save()
+
+
 
 ## Installation
 
@@ -19,8 +32,11 @@ You can install the development version of presentr like so:
 This is a basic example which shows you how to solve a common problem:
 
 ``` r
+
 library(presentr)
+
 ## basic example code
+
 ```
 
  <!-- badges: start -->
