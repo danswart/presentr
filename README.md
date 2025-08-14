@@ -5,9 +5,32 @@
 <img src="inst/extdata/presentr-hexSticker-gold.png" width="25%" height="25%">
 
 
-The functions of presentr are:
+embed_mp4 <- function(mp4_path, output_file = NULL) 
 
-presentr::imbed_mp3()
+mp4_path = path to the MP4 video file (local file path or URL) as a character string.
+output_file = optional output file path. If specified, the HTML video tag will be appended to this file.
+
+
+Examples:
+
+# Embed an MP4 video and print to console
+embed_mp4("path/to/video.mp4")
+
+# Append to a specific file
+embed_mp4("path/to/video.mp4", "output.Rmd")
+
+# Append to the default file (custom-output.rmd)
+embed_mp4("path/to/video.mp4", "custom-output.rmd")
+
+# Print to console for cut and paste 
+embed_mp4("path/to/video.mp4")
+
+
+
+
+
+
+
 presentr::find_duplicate_media()
 presentr::get_media_calls()
 presentr::lmt_gif_loops()

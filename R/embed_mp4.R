@@ -40,7 +40,7 @@ embed_mp4 <- function(mp4_path, output_file = NULL) {
   )
 
   if (!is.null(output_file)) {
-    # Open the output file in append mode and write the HTML code
+    # Open the output file in append mode and write the HTML code to it
     cat(html_code, file = output_file, append = TRUE, sep = "\n")
   } else {
     # Print the HTML code to the console
