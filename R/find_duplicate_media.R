@@ -6,7 +6,7 @@
 #' @param rmd_file   An .Rmd path/filename provided as a character string.  Default value = "sample-slides.Rmd"
 #' @param save_to_file   A logical vector,provided as a character string, indicating user request to write a new file to current working directory.  Default value = "FALSE"
 #'
-#' @return  An R object named 'dupliate_media' which is printed in console, or (optionally) written to a new Rmd file in current working directory.
+#' @return  An R object named 'duplicate_media' which is printed in console, or (optionally) written to a new Rmd file in current working directory.
 #'
 #' @examples
 #' rmd_file = system.file("extdata", "sample-slides.rmd", package = "presentr")
@@ -15,6 +15,8 @@
 #' \dontrun{
 #'    find_duplicate_media("path/to/your/sample-slides.rmd", save_to_file = TRUE)
 #'}
+#'
+#' @import htmltools
 #'
 #' @export
 find_duplicate_media <- function(rmd_file = "sample-slides.rmd", save_to_file = FALSE) {

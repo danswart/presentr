@@ -12,7 +12,7 @@ find_duplicate_media(rmd_file = "sample-slides.rmd", save_to_file = FALSE)
 \item{save_to_file}{A logical vector,provided as a character string, indicating user request to write a new file to current working directory.  Default value = "FALSE"}
 }
 \value{
-An R object named 'dupliate_media' which is printed in console, or (optionally) written to a new Rmd file in current working directory.
+An R object named 'duplicate_media' which is printed in console, or (optionally) written to a new Rmd file in current working directory.
 }
 \description{
 Finds duplicate media calls in Rmd slide deck (if any) and reports them in the console as aid to removing duplicates.  Optionally, will save duplicates to file in current directory.  User supplies argument for Rmd path/filename containing the slide deck, and the (optional) logical argument of TRUE.  Default value = FALSE.    CAUTION - WHEN 'save_to_file' argument = TRUE, A NEW FILE IS SAVED IN THE CURRENT DIRECTORY NAMED 'media-duplicates.rmd'.
